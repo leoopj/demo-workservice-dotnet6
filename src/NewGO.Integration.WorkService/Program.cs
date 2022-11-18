@@ -4,7 +4,6 @@ using NewGO.Integration.Model.Map;
 using NewGO.Integration.Infra.IoC;
 using NLog.Extensions.Logging;
 using System.Reflection;
-using System.Globalization;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((hostContext, configApp) =>
@@ -33,7 +32,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                    .AddAutoMapper(Assembly.GetAssembly(typeof(ConfigMap)))
                    .BuildServiceProvider();
 
-        Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
+        NewGO.Integration.Infra.ProviderFactory.SetProvider(_serviceProvider);
 
     })
     .Build();

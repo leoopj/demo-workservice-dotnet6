@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Options;
 using NewGO.Integration.Infra;
+using NewGO.Integration.Model;
 
 namespace NewGO.Integration.Senior
 {
@@ -28,8 +29,17 @@ namespace NewGO.Integration.Senior
         {
             while (!stoppingToken.IsCancellationRequested)
             {
+                try
+                {
+                    ProviderFactory.GetService<IHelloWordSvc>().HelloWordSync();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
+                await Task.Delay(10000, stoppingToken);
             }
         }
 

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="_Interface\Dom\" />
+    <Folder Include="_Interface\Rep\" />
+  </ItemGroup>
+
 </Project>

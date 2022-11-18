@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using NewGO.Integration.Application;
+using NewGO.Integration.Model;
 
 namespace NewGO.Integration.Infra.IoC
 {
@@ -7,7 +9,17 @@ namespace NewGO.Integration.Infra.IoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            try
+            {
+                services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+                services.AddScoped<IHelloWordSvc, HelloWordSvc>();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }

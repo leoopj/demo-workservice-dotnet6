@@ -35,5 +35,6 @@
     <ProjectReference Include="..\NewGO.Integration.Infra.IoC\NewGO.Integration.Infra.IoC.csproj" />
     <ProjectReference Include="..\NewGO.Integration.Infra\NewGO.Integration.Infra.csproj" />
     <ProjectReference Include="..\NewGO.Integration.Model.Map\NewGO.Integration.Model.Map.csproj" />
+    <ProjectReference Include="..\NewGO.Integration.Model\NewGO.Integration.Model.csproj" />
   </ItemGroup>
 </Project>

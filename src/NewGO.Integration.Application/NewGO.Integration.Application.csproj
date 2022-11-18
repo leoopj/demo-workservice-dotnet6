@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NewGO.Integration.Model\NewGO.Integration.Model.csproj" />
+  </ItemGroup>
+
 </Project>
