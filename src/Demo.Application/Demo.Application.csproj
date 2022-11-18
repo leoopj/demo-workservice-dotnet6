@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewGO.Integration.Model\NewGO.Integration.Model.csproj" />
+    <ProjectReference Include="..\Demo.Model\Demo.Model.csproj" />
   </ItemGroup>
 
 </Project>

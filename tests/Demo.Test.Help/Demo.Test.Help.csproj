@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\NewGO.Integration.Model.Map\NewGO.Integration.Model.Map.csproj" />
+    <ProjectReference Include="..\..\src\Demo.Model.Map\Demo.Model.Map.csproj" />
   </ItemGroup>
 
 </Project>

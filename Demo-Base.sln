@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewGO.Integration.WorkService", "src\NewGO.Integration.WorkService\NewGO.Integration.WorkService.csproj", "{20F775BC-9834-449E-B5F4-BEB74F929348}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.WorkService", "src\Demo.WorkService\Demo.WorkService.csproj", "{20F775BC-9834-449E-B5F4-BEB74F929348}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{35A24690-0B30-4C1E-9DFA-05143E591D30}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{68105D8C-967
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B5AFBA4C-4EEE-4BF0-B820-0AE6E35395D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeggo.Integration.Test", "tests\Keeggo.Integration.Test\Keeggo.Integration.Test.csproj", "{8B54FC7E-3B54-4182-9EF9-C360E4602C91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Test", "tests\Demo.Test\Demo.Test.csproj", "{8B54FC7E-3B54-4182-9EF9-C360E4602C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keeggo.Integration.Test.Help", "tests\Keeggo.Integration.Test.Help\Keeggo.Integration.Test.Help.csproj", "{526650D6-0C48-4F1C-B687-ECEC9B06E9C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Test.Help", "tests\Demo.Test.Help\Demo.Test.Help.csproj", "{526650D6-0C48-4F1C-B687-ECEC9B06E9C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Client", "1 - Client", "{83BF0761-9F06-4979-9515-D72986E886F2}"
 EndProject
@@ -33,21 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8 - Cross-Cuttings", "8 - C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - WorkService", "1.1 - WorkService", "{58B0EB7C-1436-44D4-8957-4CE46A400F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Application", "src\NewGO.Integration.Application\NewGO.Integration.Application.csproj", "{A6FDF4D0-5184-4ECE-94E7-C160B0972A72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Application", "src\Demo.Application\Demo.Application.csproj", "{A6FDF4D0-5184-4ECE-94E7-C160B0972A72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Domain", "src\NewGo.Integration.Domain\NewGO.Integration.Domain.csproj", "{4E71800B-60B9-4B3A-A42C-5E3557A7F43C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Domain", "src\Demo.Domain\Demo.Domain.csproj", "{4E71800B-60B9-4B3A-A42C-5E3557A7F43C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Model", "src\NewGO.Integration.Model\NewGO.Integration.Model.csproj", "{CE7B3EBE-2D86-4525-BA2C-B8D2641EB6B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Model", "src\Demo.Model\Demo.Model.csproj", "{CE7B3EBE-2D86-4525-BA2C-B8D2641EB6B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Model.Map", "src\NewGO.Integration.Model.Map\NewGO.Integration.Model.Map.csproj", "{2E81C8A9-3A8A-48DE-A5DE-1DD714B38465}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Model.Map", "src\Demo.Model.Map\Demo.Model.Map.csproj", "{2E81C8A9-3A8A-48DE-A5DE-1DD714B38465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Data", "src\NewGO.Integration.Data\NewGO.Integration.Data.csproj", "{082B21A4-F17F-4F64-A6C0-E9B9038A81C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Data", "src\Demo.Data\Demo.Data.csproj", "{082B21A4-F17F-4F64-A6C0-E9B9038A81C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.DistributedService", "src\NewGO.Integration.DistributedService\NewGO.Integration.DistributedService.csproj", "{E68FF125-D294-4BE3-8C8A-063AD2CC562C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.DistributedService", "src\Demo.DistributedService\Demo.DistributedService.csproj", "{E68FF125-D294-4BE3-8C8A-063AD2CC562C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Infra", "src\NewGO.Integration.Infra\NewGO.Integration.Infra.csproj", "{5C486B38-3BB1-4BD2-9AB6-5B6B787FFF13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Infra", "src\Demo.Infra\Demo.Infra.csproj", "{5C486B38-3BB1-4BD2-9AB6-5B6B787FFF13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGO.Integration.Infra.IoC", "src\NewGO.Integration.Infra.IoC\NewGO.Integration.Infra.IoC.csproj", "{51F174F7-B333-4800-B0D4-6E44EE5DC169}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Infra.IoC", "src\Demo.Infra.IoC\Demo.Infra.IoC.csproj", "{51F174F7-B333-4800-B0D4-6E44EE5DC169}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

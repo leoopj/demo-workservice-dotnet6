@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewGO.Integration.Application\NewGO.Integration.Application.csproj" />
-    <ProjectReference Include="..\NewGO.Integration.Model\NewGO.Integration.Model.csproj" />
+    <ProjectReference Include="..\Demo.Application\Demo.Application.csproj" />
+    <ProjectReference Include="..\Demo.Model\Demo.Model.csproj" />
   </ItemGroup>
 
 </Project>
