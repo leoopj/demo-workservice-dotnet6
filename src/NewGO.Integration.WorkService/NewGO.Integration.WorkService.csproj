@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-NewGO_Integration_WorkService-731480EA-1EE0-4C9C-B64C-44096AA4C86A</UserSecretsId>
+    <RootNamespace>NewGO.Integration.WorkService</RootNamespace>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+  	<None Include="appsettings.hml.json">
+  		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  		<DependentUpon>appsettings.json</DependentUpon>
+  		<IsTransformFile>true</IsTransformFile>
+  	</None>
+  	<None Include="appsettings.dev.json">
+  		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  		<DependentUpon>appsettings.json</DependentUpon>
+  		<IsTransformFile>true</IsTransformFile>
+  	</None>
+  </ItemGroup>
+	
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewGO.Integration.Infra.IoC\NewGO.Integration.Infra.IoC.csproj" />
+    <ProjectReference Include="..\NewGO.Integration.Infra\NewGO.Integration.Infra.csproj" />
+    <ProjectReference Include="..\NewGO.Integration.Model.Map\NewGO.Integration.Model.Map.csproj" />
+  </ItemGroup>
+</Project>
